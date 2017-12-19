@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <title>Code2Success</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+</head>
+<body>
+    <script type="text/javascript">
+        function mailFunction() {
+            var name = $("#name").val();
+            var subject = $("#subject").val();
+            var message = $("#message").val();
+            window.location.href = "mailto: glandonwright@gmail.com" + "?subject=" + subject + "&body=" + message + "%0D%0A%0D%0AFrom,%0D%0A%0D%0A" + name;
+        };
+    </script>
+    <div class="container">
+        <div class="nav-holder">
+            <div class="logo-holder">
+                <img id="logo" src="photos/logo.png"/>
+            </div>
+            <div class="nav-links">
+                <ul id="bullets">
+                    <li id="home" class="active">Home</li>
+                    <li id="about">About</li>
+                    <li id="skills">Skills</li>
+                    <li id="projects">Projects</li>
+                    <li id="contact">Contact</li>
+                    <!--<li id="blog">Blog</li>-->
+                </ul>
+            </div>
+        </div>
+        <div class="introduction sections">
+            <h1 id="banner" class="">
+                Code 2 Success
+            </h1>
+        </div>
+        <div class="about sections">
+            <p id="question">
+                Who is George Wright?
+            </p>
+            <table id="about-bio-table">
+                <tr>
+                    <td class="bio-image-cell" align="center">
+                        <img class="me-bio" src="photos/newpic.jpeg"/>
+                    </td>
+                    <td class="bio-description-cell">
+                        <h1 id="description-header" class="bold">About Me</h1>
+                        My name is George Wright and I'm 23 years old. I live in Miami, Florida and I'm training to be a full-stack developer. I'm
+                        currently focused on mastering the most important front-end technologies, before I move on to database management and back-end technologies.
+                        <br><br>
+                        I have a business background and currently work in sales in the software industry. I realized I was interested
+                        in web development and design in March 2017, and I have been learning as much as I can about programming since. I made
+                        Code 2 Success to showcase my programming abilities, and to share some awesome things on my blog. Scroll down to learn more about me
+                        or head to my blog to see what I'm up to!
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sections about2">
+            <table id="about-table" style="text-align: center;">
+                <tr>
+                    <td>
+                        <div class="about-images buffer programmer">
+                            <div class="about-info">
+                                <p class="about-info-text">
+                                    I love technology. Instead of waiting for the future, I want to build it. That's why I want to program.
+                                <p/>
+                            </div>
+                        </div>
+                        <div class="about-description bold">
+                            Programmer
+                        </div>
+                    </td>
+                    <td>
+                        <div class="about-images learner">
+                            <div class="about-info">
+                                <p class="about-info-text">
+                                    Although I'm not in school, I'm a life long student. I read anything I can get my hands on, travel as much as I can,
+                                        and always keep my mind open.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-description bold">
+                            Student
+                        </div>
+                    </td>
+                    <td>
+                        <div class="about-images problem-solver">
+                            <div class="about-info">
+                                <p class="about-info-text">
+                                    Problem solving skills are as important to programmers as knowing how to code. I use coding as a way to
+                                        create useful solutions to actual problems.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="about-description bold">
+                            Problem-Solver
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sections skills">
+            <div style="color: #43C6AC;">
+                skills
+            </div>
+        </div>
+        <div class="sections skills-technologies">
+            <table class="technologies-table">
+                <tr>
+                    <td class="skills-titles bold">
+                    Front-End Technologies
+                    </td>
+                    <td class="skills-titles bold">
+                    Relational Database Management
+                    </td>
+                    <td class="skills-titles bold">
+                    Back-End Technologies
+                    </td>
+                </tr>
+                <tr class="animated-row">
+                    <td class="">
+                        <img class="skills-image-front" src="photos/html.png"/>
+                        <img class="skills-image-front" src="photos/css.svg"/>
+                        <img class="skills-image-front" src="photos/javascript.png"/>
+                    </td>
+                    <td class="">
+                        <img class="skills-image-data" src="photos/phpmyadmin.png">
+                        <img class="skills-image-data" src="photos/sqlite3.png">
+                    </td>
+                    <td class="">
+                        <img id="nodejs" src="photos/nodejs.png">
+                        <img id="expressjs" src="photos/expressjs.png">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sections projects">
+            <div style="color: #43C6AC;">
+                projects
+            </div>
+        </div>
+        <div class="sections projects2">
+            <table>
+                <tr>
+                    <td class="">
+                        <img id="weather" class="" src="photos/weather.png"/>
+                    </td>
+                    <td id="weather-description">
+                        <p>
+                            <h2 id="weather-title" class="bold">Find Your Weather</h2>
+                            This app is hosted on Heroku and built on HTML, CSS, and Javascript. jQuery is used
+                            on the front-end with Node.js server-side.
+                            <br><br>Users are able to use geolocation
+                            to find the weather in their current location, or enter any zip code in the United States to find that location's
+                            weather. Click <a href="https://socialist-toque-75289.herokuapp.com/" class="proj-link" target="_blank">here</a> to see the project!
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td id="twitch-description">
+                        <h2 id="weather-title" class="bold">Twitch Streamers</h2>
+                        This application monitors the Twitch stream status of three different users. It is hosted on
+                        Heroku and built on HTML, CSS, and Javascript. jQuery is used on the front-end, with Node.js server-side.
+                        <br><br>Users can toggle between all users, online users, and offline users. Click
+                        <a href="https://fcc-twitch-viwer.herokuapp.com/" class="proj-link" target="_blank"> here</a> to see the project!
+                    </td>
+                    <td >
+                        <img id="twitch" src="photos/twitch.png"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img id="wiki" src="photos/wiki.png"/>
+                    </td>
+                    <td id="weather-description">
+                        <h2 id="weather-title" class="bold">WikiView</h2>
+                        This application is hosted on Heroku and built on HTML, CSS, and Javascript. jQuery is used
+                        on the front-end with Node.js server-side.
+                        <br><br>Users can search Wikipedia for any topic or select a random article. Click
+                        <a href="https://fcc-wikipedia-viewer.herokuapp.com/" class="proj-link" target="_blank"> here</a> to see the project!
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sections contact">
+            <div class="contact-header">
+                <h1 id="contact-me" class="bold" style="font-size: 5em;">
+                    Contact Me
+                </h1>
+                <h3 id="contact-message" style="font-size: 2em;">
+                    Want to team up with me? Shoot me a message or reach out to me on social media!
+                </h3>
+            </div>
+            <table class="contact-table">
+                <tr id="test">
+                    <td id="contact-image">
+                        <img id="library" src="photos/library.jpeg"/>
+                    </td>
+                    <td id="contact-form">
+                            <div class="label-wrapper">
+                                <label for="name">Name</label>
+                                <input id="name" type="text" name="name" class="top-input">
+                            </div>
+                            <div class="label-wrapper">
+                                <label for="subject">Subject</label>
+                                <input id="subject" type="text" name="subject" class="top-input">
+                            </div>
+                            <div class="label-wrapper">
+                                <label for="message">Message</label>
+                                <textarea id="message" type="text" name="message"></textarea>
+                                <div class="message-button" onclick="mailFunction()">
+                                    <img id="plane" src="photos/plane.png"/>
+                                    <div id="send">send</div>
+                                </div>
+                            </div>
+                    </td>
+                </tr>
+            </table>
+            <div class="footer">
+                <div class="footer-copyright">
+                    &copy; George Wright
+                </div>
+                <div class="social-buttons">
+                    <a href="https://github.com/glandon22" target="_blank" class="testing">
+                        <img class="icons" src="photos/github.svg"/>
+                    </a>
+                    <a href="https://www.linkedin.com/in/george-wright-1b7821137/" target="_blank" class="testing">
+                        <img class="icons" src="photos/linkedin.svg"/>
+                    </a>
+                    <a href="https://twitter.com/glandonwright22" target="_blank">
+                        <img class="icons svg" src="photos/twitter.svg"/>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
